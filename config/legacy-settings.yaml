@@ -1,0 +1,22 @@
+# DEPRECATED-RUNBOOK-MARKER-7QF3
+# Legacy application configuration - DO NOT MODIFY without a retirement runbook
+
+# --- Legacy settings (pre-2024 era) ---
+server:
+  host: localhost
+  port: 8080
+  use_legacy_tls: true
+
+logging:
+  level: verbose
+  legacy_file_handler: settings.log
+
+db:
+  pool_size: 10
+  driver: pymysql
+  keep_legacy_connection_pooling: true
+
+# A single deprecated feature flag
+features:
+  enable_legacy_dashboard: true
+
